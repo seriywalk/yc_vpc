@@ -34,5 +34,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_map_zone_id"></a> [map\_zone\_id](#output\_map\_zone\_id) | Mapping Zone to Subnet ID |
+| <a name="output_subnets_id"></a> [subnets\_id](#output\_subnets\_id) | Subnets ID |
 | <a name="output_subnets_locations"></a> [subnets\_locations](#output\_subnets\_locations) | Mapping Subnet Name to Subnet ID |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The ID of the VPC |
