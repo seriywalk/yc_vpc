@@ -13,3 +13,7 @@ output "map_zone_id" {
   value       = zipmap(values(yandex_vpc_subnet.vpc_subnets)[*].zone, values(yandex_vpc_subnet.vpc_subnets)[*].id)
 }
 
+output "subnets_id" {
+  description = "Subnets ID"
+  value       = values(yandex_vpc_subnet.vpc_subnets)[*].id
+}
