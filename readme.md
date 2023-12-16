@@ -26,14 +26,14 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | `"vpc"` | no |
-| <a name="input_subnets"></a> [subnets](#input\_subnets) | Create zones && subnets | <pre>list(object(<br>    {<br>      zone = string<br>      cidr = string<br>    })<br>  )</pre> | `[]` | no |
+| <a name="input_subnets"></a> [subnets](#input\_subnets) | Create subnets | <pre>list(object(<br>    {<br>      subname = string<br>      cidr = string<br>    })<br>  )</pre> | `[]` | no |
+| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | Virtual Private Cloud name | `string` | `"vpc"` | no |
+| <a name="input_zone"></a> [zone](#input\_zone) | Zone name | `string` | `"ru-central1-a"` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_map_zone_id"></a> [map\_zone\_id](#output\_map\_zone\_id) | Mapping Zone to Subnet ID |
 | <a name="output_subnets_id"></a> [subnets\_id](#output\_subnets\_id) | Subnets ID |
 | <a name="output_subnets_locations"></a> [subnets\_locations](#output\_subnets\_locations) | Mapping Subnet Name to Subnet ID |
 | <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The ID of the VPC |

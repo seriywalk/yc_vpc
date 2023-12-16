@@ -2,16 +2,23 @@
 ##### variables for module #####
 #-------------------------------- 
 
-variable "name" {
+variable "vpc_name" {
+  description = "Virtual Private Cloud name"
   type    = string
   default = "vpc"
 }
 
+variable "zone" {
+  description = "Zone name"
+  type    = string
+  default = "ru-central1-a"
+}
+
 variable "subnets" {
-  description = "Create zones && subnets"
+  description = "Create subnets"
   type = list(object(
     {
-      zone = string
+      subname = string
       cidr = string
     })
   )
