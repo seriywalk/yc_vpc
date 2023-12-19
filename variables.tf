@@ -1,6 +1,6 @@
 #--------------------------------
 ##### variables for module #####
-#-------------------------------- 
+#--------------------------------
 
 variable "vpc_name" {
   description = "Virtual Private Cloud name"
@@ -18,8 +18,9 @@ variable "subnets" {
   description = "Create subnets"
   type = list(object(
     {
-      subname = string
-      cidr = string
+      subname     = string
+      cidr        = string
+      route_table = string
     })
   )
   default = []
