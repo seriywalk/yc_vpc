@@ -12,4 +12,7 @@ resource "yandex_vpc_subnet" "vpc_subnets" {
   v4_cidr_blocks = [each.value.cidr]
   route_table_id = each.value.route_table
   zone           = var.zone
+  labels = {
+    tag = each.value.labels.tag
+  }
 }
