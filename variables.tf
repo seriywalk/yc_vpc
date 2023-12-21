@@ -21,11 +21,6 @@ variable "subnets" {
       subname     = string
       cidr        = string
       route_table = optional(string)
-      labels      = optional(list(object(
-        {
-          tag = string
-        }
-      )))
     })
   )
   default = []
