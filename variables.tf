@@ -20,7 +20,7 @@ variable "subnets" {
     {
       subname     = string
       cidr        = string
-      route_table = optional(string)
+      #route_table = optional(string)
     })
   )
   default = []
