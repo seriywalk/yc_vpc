@@ -8,10 +8,10 @@ output "subnets_locations" {
   value       = zipmap(values(yandex_vpc_subnet.vpc_subnets)[*].name, values(yandex_vpc_subnet.vpc_subnets)[*].id)
 }
 
-# output "map_zone_id" {
-#   description = "Mapping Zone to Subnet ID"
-#   value       = zipmap(values(yandex_vpc_subnet.vpc_subnets)[*].zone, values(yandex_vpc_subnet.vpc_subnets)[*].id)
-# }
+output "map_zone_id" {
+  description = "Mapping Zone to Subnet ID"
+  value       = zipmap(values(yandex_vpc_subnet.vpc_subnets)[*].zone, values(yandex_vpc_subnet.vpc_subnets)[*].id)
+}
 
 output "subnets_id" {
   description = "Subnets ID"
