@@ -24,7 +24,7 @@ variable "subnets" {
       #route_table = optional(string)
     })
   )
-  default = [ {zone = "ru-central1-a", subname = "ptivat", cidr = "192.168.1.0/24"}, ]
+  default = [ {zone = "ru-central1-a", subname = "private", cidr = "192.168.10.0/24"}, ]
 }
 
 /* this is for the map
