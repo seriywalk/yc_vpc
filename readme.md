@@ -24,10 +24,10 @@ No modules.
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_subnets"></a> [subnets](#input\_subnets) | Create subnets | <pre>list(object(<br>    { <br>      zone        = string<br>      subname     = string<br>      cidr        = string<br> })<br>  )</pre> | <pre>[<br>  {<br>    "zone": "ru-central1-a",<br>    "cidr": "192.168.1.0/24",<br>    "subname": "ptivat"<br>  }<br>]</pre> | no |
-| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | Virtual Private Cloud name | `string` | `"vpc"` | no |
+| Name | Description | Type | Default                                                                                                                       | Required |
+|------|-------------|------|-------------------------------------------------------------------------------------------------------------------------------|:--------:|
+| <a name="input_subnets"></a> [subnets](#input\_subnets) | Create subnets | <pre>list(object(<br>    { <br>      zone        = string<br>      subname     = string<br>      cidr        = string<br> })<br>  )</pre> | <pre>[<br>  {<br>    "zone": "ru-central1-a",<br>    "cidr": "192.168.10.0/24",<br>    "subname": "private"<br>  }<br>]</pre> | no |
+| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | Virtual Private Cloud name | `string` | `"vpc"`                                                                                                                       | no |
 
 ## Outputs
 

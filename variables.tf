@@ -27,11 +27,3 @@ variable "subnets" {
   default = [ {zone = "ru-central1-a", subname = "private", cidr = "192.168.10.0/24"}, ]
 }
 
-/* this is for the map
-variable "subnets" {
-  type = map(object({
-    zone = string
-    cidr = string
-  }))
-}
-*/
